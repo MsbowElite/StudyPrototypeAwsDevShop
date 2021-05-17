@@ -1,0 +1,24 @@
+﻿{
+  "ValueTotal": 0,
+  "Cliente": {
+    "Id": "1",
+    "Name": "Mario Person",
+    "Cpf": "00023402078",
+    "Email": "test@test.com"
+  },
+  "Payment": {
+    "CardNumber": "5338450341991943",
+    "Validade": "16/08/2022",
+    "CVV": "323"
+  },
+  "Products": [
+    {
+      "Id": "1",
+      "Quantity": 4
+    },
+    {
+      "Id": "2",
+      "Quantity": 2
+    }
+  ]
+}
