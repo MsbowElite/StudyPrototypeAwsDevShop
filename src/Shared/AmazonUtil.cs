@@ -34,12 +34,12 @@ namespace Shared
 
         public static async Task SendToLine(SQSLine line, Order order)
         {
-            var json = JsonConvert.SerializeObject(order);
+            var orderJson = JsonConvert.SerializeObject(order);
             var client = new AmazonSQSClient(RegionEndpoint.SAEast1);
             var request = new SendMessageRequest
             {
                 QueueUrl = $"https://sqs.sa-east-1.amazonaws.com/355552168393/{line}",
-                MessageBody = json
+                MessageBody = orderJson
             };
 
             await client.SendMessageAsync(request);
